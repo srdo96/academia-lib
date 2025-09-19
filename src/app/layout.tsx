@@ -19,7 +19,7 @@ const ibmPlexSans = localFont({
   ],
 });
 
-const babasNeue = localFont({
+const bebasNeue = localFont({
   src: [
     { path: "/fonts/BebasNeue-Regular.ttf", weight: "400", style: "normal" },
   ],
@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ibmPlexSans.className} ${babasNeue.variable} antialiased`}
+        className={`${ibmPlexSans.className} ${bebasNeue.variable} antialiased`}
       >
         {children}
       </body>

@@ -1,9 +1,16 @@
-import { Button } from "@/components/ui/button";
+import BookList from "@/components/ui/BookList";
+import BookOverview from "@/components/ui/BookOverview";
+import { sampleBooks } from "@/constants";
 
 export default function Home() {
   return (
-    <div>
-      <Button>Click Me!</Button>
-    </div>
+    <>
+      <BookOverview {...sampleBooks[0]} />
+      <BookList
+        title="Latest Books"
+        books={sampleBooks}
+        containerClassName="mt-28"
+      />
+    </>
   );
 }
