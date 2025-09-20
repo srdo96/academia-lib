@@ -1,6 +1,6 @@
 import Image from "next/image";
-import BookCover from "../BookCover";
-import { Button } from "./button";
+import BookCover from "./BookCover";
+import { Button } from "./ui/button";
 
 const BookOverview = ({
   title,

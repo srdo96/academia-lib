@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import BookCoverSvg from "./BookCoverSvg";
 
 type BookCoverVariant = "extraSmall" | "small" | "medium" | "regular" | "wide";
 
@@ -24,7 +25,6 @@ const BookCover = ({
   coverColor = "#012B48",
   coverUrl = "https://placehold.co/400x600.png",
 }: Props) => {
-  console.log(coverUrl);
   return (
     <div
       className={cn(
@@ -33,7 +33,7 @@ const BookCover = ({
         className
       )}
     >
-      Book side svg
+      <BookCoverSvg coverColor={coverColor} />
       <div
         className="absolute z-10"
         style={{ left: "12%", width: "87.5%", height: "88%" }}
